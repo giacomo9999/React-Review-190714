@@ -1,10 +1,9 @@
 .App {
   text-align: center;
   background-color: #c8d5e4;
-  font-size: 1em;
   width: 20%;
   margin: 30px auto;
-  padding: 5px 10px 15px;
+  padding: 5px 10px 30px;
 }
 
 h1,
@@ -12,13 +11,15 @@ h2,
 h3,
 h4 {
   margin: 10px auto 10px;
-  font-family: 'Alegreya', serif;
+  font-family: "Alegreya", serif;
+  font-weight: 500;
+  font-style: italic;
   text-align: center;
-
 }
 
-p{
-  font-family: 'Alegreya', serif;
+p {
+  font-family: "Alegreya", serif;
+  font-weight: 400;
   margin: 0;
   text-align: center;
 }

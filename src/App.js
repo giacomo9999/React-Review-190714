@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h2>Jim Reviews React</h2>
+      <h1>Jim Reviews React</h1>
       <p>Here we go!</p>
       <p>Here we go!</p>
       <p>Here we go!</p>
