@@ -50,9 +50,7 @@ class VegList extends Component {
     let id = arguments[0];
     this.setState({
       mockData: this.state.mockData.filter(item => {
-        if (item.id !== id) {
-          return item;
-        }
+        return (item.id !== id) 
       })
     });
   }
@@ -65,6 +63,7 @@ class VegList extends Component {
           item["eaten"] = true;
           return item;
         }
+        return item;
       })
     });
   }
@@ -106,7 +105,9 @@ class VegList extends Component {
               >
                 Edit
               </button>
-              <button onClick={this.onCompleteHandle}>Complete</button>
+              <button onClick={this.onCompleteHandle.bind(this, item.id)}>
+                Complete
+              </button>
             </li>
           ))}
         </ul>
